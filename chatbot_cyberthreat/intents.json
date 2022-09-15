@@ -1,0 +1,124 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can detect cyberthreats and recommend solutions to handle the threats So tell me what you are experiencing::"],
+         "context": [""]
+        },
+        {"tag": "phishing",
+         "patterns": ["I cant login to my email", "My email is hacked", "yes I changed my password", "yes I shared my password", "yes I opened a link in spam", "what do you think causes this login issues"],
+         "responses": ["Did you share your password with anyone", "did you open a web link in spam", "did you change your password on third party site",
+         "i think this is phishing"],
+         "context": [""]
+        },
+        {"tag": "phishing_attack",
+         "patterns": ["tell me about phishing", "what is phishing", "i will like to know about phishing"],
+         "responses": ["Phishing attacks target people to steal login and other confidential information by trying to trick them into clicking malicious links in emails, message apps, or on the web"],
+         "context": [""]
+        },
+        {"tag": "phishing_solution",
+         "patterns": ["how to stop phishing", "how can i protect from phishing", "how to prevent phishing", "solution to phishing"],
+         "responses": ["Filtering out phishing mail, Browsers alerting users to fraudulent websites, Augmenting password logins, Monitoring and takedown, Transaction verification and signing,  Multi-factor authentication, Email content redaction, Limitations of technical responses"],
+         "context": [""]
+        },
+        {"tag": "Malware",
+         "patterns": ["Getting unnecessary pop-up on my screen", "yes computer hangs frequently", "yes files and applications are getting deleted", "what do you think causes this screen, pop-up, notification issues"],
+         "responses": ["did you click any strange notification or pop-up on the webpage", "do you notice computer hangs frequently", "do you notice any application or browser add-ons appearing on screen that you don’t recognize", "i think this is Malware"],
+         "context": [""]
+        },
+        {"tag": "Malware_attack",
+         "patterns": ["tell me about malware", "what is malware", "i will like to know about malware"],
+         "responses": ["Malware is malicious software designed to infect IT systems and cause damage or compromise data. Malware attacks come in many forms such as viruses, worms, trojans, adware, spyware, ransomware, and more."],
+         "context": [""]
+        },
+        {"tag": "Malware_solution",
+         "patterns": ["how to stop malware", "how can i protect from Malware", "how to prevent malware", "solution to malware"],
+         "responses": ["Anti-malware programs can combat malware in two ways: They can provide real time protection against the installation of malware software on a computer. This type of malware protection works the same way as that of antivirus protection in that the anti-malware software scans all incoming network data for malware and blocks any threats it comes across. Anti-malware software programs can be used solely for detection and removal of malware software that has already been installed onto a computer. This type of anti-malware software scans the contents of the Windows registry, operating system files, and installed programs on a computer and will provide a list of any threats found, allowing the user to choose which files to delete or keep, or to compare this list to a list of known malware components, removing files that match."],
+         "context": [""]
+        },
+        {"tag": "Ransomware",
+         "patterns": ["yes getting ransomware message", "yes asking me to make payment", "yes email claim to have my password", "what do you think causes this payment, password, keylogger issues"],
+         "responses": ["did you receive ransomware message", "did you receive a demand for payment email", "did you receive email claiming they have accessed your password through a keylogger", "i think this is Ransomware"],
+         "context": [""]
+        },
+        {"tag": "Ransomware_attack",
+         "patterns": ["tell me about ransomware", "what is ransomware", "i will like to know about ransomware"],
+         "responses": ["Ransomware is a form of malware that encrypts data on infected IT systems. It demands a ransom is paid to get a code to decrypt the infected system, usually to an anonymous address using Bitcoin. Many of the significant Cybersecurity attacks in the last few years have been ransomware attacks (WannaCry, for example). Or they have masqueraded as ransomware attacks to hide their real purpose (NotPetya seems to fall into this category)."],
+         "context": [""]
+        },
+        {"tag": "Ransomware_solution",
+         "patterns": ["how to stop ransomware", "how to protect from Ransomware", "how to prevent ransomware", "solution to ransomware"],
+         "responses": ["Installing security updates issued by software vendors can mitigate the vulnerabilities leveraged by certain strains to propagate.Other measures include cyber hygiene − exercising caution when opening e-mail attachments and links, network segmentation, and keeping critical computers isolated from networks.Furthermore, to mitigate the spread of ransomware measures of infection control can be applied. Such may include disconnecting infected machines from all networks, educational programs, effective communication channels, malware surveillance and ways of collective participation."],
+         "context": [""]
+        },
+        {"tag": "Man_in_the_middle",
+         "patterns": ["yes noticed unexpected invoices", "yes large payment happening", "what do you think causes theft, payment, large invoices issues"],
+         "responses": ["are you getting unexpected invoices that have not been verified", "are you noticing large payments not arriving despite remuneration advice", "i think this is Man in the middle attack" ],
+         "context": [""]
+        },
+        {"tag": "Man_in_the_middle_attack",
+         "patterns": ["tell me about Man in the middle", "what is Man in the middle", "i will like to know about Man in the middle"],
+         "responses": ["A man in the middle (MITM) attack occurs when cybercriminals intercept and alter network traffic flowing between IT systems. The MITM attack impersonates both senders and receivers on the network. It aims to trick both into sending unencrypted data that the attacker intercepts and can use for further attacks or financial gain."],
+         "context": [""]
+        },
+        {"tag": "Man_in_the_middle_solution",
+         "patterns": ["how to stop Man in the middle", "how to protect from Man in the middle", "how to prevent Man in the middle", "solution to Man in the middle"],
+         "responses": ["MITM attacks can be prevented or detected by two means: authentication and tamper detection. Authentication provides some degree of certainty that a given message has come from a legitimate source. Tamper detection merely shows evidence that a message may have been altered."],
+         "context": [""]
+        },
+        {"tag": "Denial_Of_Service",
+         "patterns": ["cant open my webpage", "yes webpage throwing error", "yes webpage showing error", "yes webpage IP is down", "what do you think causes webpage issues"],
+         "responses": ["have you been able to access your webpage in the last 24 hours", "do you always get a 503 error on the webpage ", "have you been receiving large amount of requests from sepcific IP addresses", "i think this is Denial Of Service Attack" ],
+         "context": [""]
+        },
+        {"tag": "Denial_Of_Service_attack",
+         "patterns": ["tell me about Denial Of Service Attack", "what is Denial Of Service Attack", "i will like to know about Denial Of Service Attack"],
+         "responses": ["A Denial of Service (DoS) attack aims to disrupt a service being provided on the network by flooding the targeted systems or applications with so many requests that the servers are unable to respond to them all. By doing this, legitimate access requests are prevented from accessing the service, or they take a very long time. Most DoS attacks are distributed and known as DDoS attacks. These use malware-infected PC’s, and increasingly poorly secured IoT devices, to rapidly send the requests that overwhelm the targeted systems."],
+         "context": [""]
+        },
+        {"tag": "Denial_Of_Service_solution",
+         "patterns": ["how to stop Denial Of Service Attack", "how to protect from Denial of service attack", "how to prevent Denial Of Service Attack", "solution to Denial Of Service Attack"],
+         "responses": ["Defensive responses to denial-of-service attacks typically involve the use of a combination of attack detection, traffic classification and response tools, aiming to block traffic that they identify as illegitimate and allow traffic that they identify as legitimate. Prevention and response tools inlcude: Application front end hardware, Application level Key Completion Indicators, Blackholing and sinkholing, IPS based prevention, DDS based defense, Firewalls, Routers, Switches, Upstream filtering"],
+         "context": [""]
+        },
+        {"tag": "Crypto-Jacking",
+         "patterns": ["yes computer very slow", "yes take time boot computer", "yes memory usage increasing", "what do you think causes slow computer, memory usage, booting issues"],
+         "responses": ["is the performance of computer dropping significantly", "how quick does the computer boot", "does the computer perform normally when offline", "i think this is Crypto-Jacking" ],
+         "context": [""]
+        },
+        {"tag": "Crypto-Jacking_attack",
+         "patterns": ["tell me about Crypto-Jacking", "what is Crypto-Jacking", "i will like to know about Crypto-Jacking"],
+         "responses": ["Crypto-jacking is a type of malware that uses the resources of the infected IT systems to ‘mine’ for cryptocurrencies. This steals the attacked systems computing resources by running at high load to generate income for the remote attackers. Who then make money from the cryptocurrencies that are generated on the infected system."],
+         "context": [""]
+        },
+        {"tag": "Crypto-Jacking_solution",
+         "patterns": ["how to stop Crypto-Jacking", "how to protect from Crypto-jacking", "how to prevent Crypto-Jacking", "solution to Crypto-Jacking"],
+         "responses": ["Incorporate the cryptojacking threat into your security awareness training, focusing on phishing-type attempts to load scripts onto users computers, Install an ad-blocking or anti-cryptomining extension on web browsers, Use endpoint protection that is capable of detecting known crypto miners, Keep your web filtering tools up to date, Use a mobile device management (MDM) solution to better control whats on users devices"],
+         "context": [""]
+        },
+        {"tag": "not_cyberattack",
+         "patterns": ["no, i didn't share my password", "no, i didn't ", "no, i didn't change my password", "no, i didn't open a link in email", "no, i didn't give anyone access to my computer"],
+         "responses": ["did you share you password", "did you change your password", "did you open a link in span email", "did you give someone access to your computer", "this is not a cyberattack"],
+         "context": [""]
+        }
+   ]
+}
